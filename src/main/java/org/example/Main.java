@@ -3,11 +3,11 @@ package org.example;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+     static void main(String[] args) {
         String rutaJson = "pokemon.json";
 
         // 1. Cargar datos de forma nativa
-        List<Pokemon> listaPokemons = PokemonLoader.cargarDesdeJson(rutaJson);
+        List<Pokemon> listaPokemons = FileService.cargarJSON(rutaJson);
 
         if (listaPokemons != null && !listaPokemons.isEmpty()) {
             // 2. Analizar datos

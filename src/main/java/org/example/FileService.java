@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.Pokemon;
 import tools.jackson.core.type.TypeReference;
 import tools.jackson.databind.ObjectMapper;
 
@@ -9,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileService {
-    public List<Pokemon> cargarJSON(String path) {
+    public static List<Pokemon> cargarJSON(String path) {
         ObjectMapper mapper = new ObjectMapper();
         List<Pokemon> pokemons = new ArrayList<>();
         try {
